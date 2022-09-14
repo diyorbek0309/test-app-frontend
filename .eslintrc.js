@@ -1,12 +1,17 @@
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
   settings: {
     react: {
       version: 'detect',
     },
-  },
-  env: {
-    browser: true,
-    es2021: true,
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.tsx'],
+      },
+    },
   },
   extends: [
     'eslint:recommended',
